@@ -14,6 +14,10 @@
   
   /*** MOBILE */
   --width-mobile-main: 375px;
+  --height-mobile-main: 1360px;
+  --padding-top-desktop-main: 5.6875rem; /* 91px */
+  --padding-bottom-desktop-main: 4.875rem; /* 91px */
+  --padding-x-desktop-main: 2rem; /* 32px */
   
   /* COLORS */
   --primary-red: hsl(0, 78%, 62%);
@@ -25,10 +29,15 @@
   --neutral-very-light-gray: hsl(0, 0%, 98%);
 
   /* TYPOGRAPHY */
+  /*** desktop */
   --font-size-body: 0.9375rem; /* 15px */
   --font-size-desc-header: 1.875rem; /* 30px */
   --font-size-feature-header: 1.0625rem; /* 17px */
   --font-size-feature-body: 0.8125rem; /* 13px */
+
+  /*** mobile */
+  --font-size-desc-header-mobile: 1.5rem; /* 24px */
+
   --font-weight-extra-light: 200;
   --font-weight-regular: 400;
   --font-weight-semi-bold: 600;
@@ -72,6 +81,7 @@ body {
   margin-top: .625rem; /* 10px */
 }
 
+/* FEATURE: cards with features */
 .feature-container {
   display: flex;
   flex-direction: row;
@@ -130,4 +140,45 @@ body {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+  .main-container {
+    width: var(--width-mobile-main);
+    height: var(--height-mobile-main);
+    padding: var(--padding-top-desktop-main) var(--padding-x-desktop-main); /* 91px 32px */
+    padding-bottom: var(--padding-bottom-desktop-main);
+  }
+  .description-header {
+    font-size: var(--font-size-desc-header-mobile);
+  }
+  .description-subheader {
+    font-size: var(--font-size-desc-header-mobile);
+  }
+
+  .feature-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem; /* 25px */
+    position: absolute;
+    bottom: var(--padding-bottom-desktop-main);
+  }
+
+  .feature-item {
+    width: 311px;
+    height: 222px;
+    padding: 1.75rem; /* 28 px */
+  }
+
+  .feature-item-container {
+    gap: 1.5625rem; /* 25px */
+  }
+
+  .feature-image {
+    position: absolute;
+    bottom: 1.375rem; /* 22px */
+    right: 1.75rem; /* 28 px */
+  }
 }
