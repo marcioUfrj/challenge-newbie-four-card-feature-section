@@ -11,7 +11,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -26,7 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshots/desktop-version.jpg.jpg)
+![](./screenshots/mobile-version.jpg.jpg)
 
 ### Links
 
@@ -34,6 +34,9 @@ Users should be able to:
 - Live Site URL: [Git Pages](https://marcioufrj.github.io/challenge-newbie-four-card-feature-section/)
 
 ## My process
+
+1. Completed desktop version.
+2. Completed mobile version.
 
 ### Built with
 
@@ -46,15 +49,11 @@ Users should be able to:
 
 - Better understanding of CSS Position, CSS Border and CSS Flexbox
 
-### Continued development
-
-
-
 ### Useful resources
 
-- [CSS Tricks Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - 
+- [CSS Tricks - Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/marcioUfrj)
+- Frontend Mentor - [@marcioUfrj](https://www.frontendmentor.io/profile/marcioUfrj)
 - Twitter - [@tsukimi_23](https://www.twitter.com/tsukimi_23)
